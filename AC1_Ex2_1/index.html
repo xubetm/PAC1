@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estils.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container-user">
+      <form action="" class="caja-formulario">
+        <div class="caja-datos">
+          <label for="user">Username:</label>
+          <input type="text" id="user" placeholder="Enter Username" />
+          <small id="user-error"></small>
+        </div>
+        <div class="caja-datos">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter Email" />
+          <small id="email-error"></small>
+        </div>
+        <div class="caja-datos">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter Password" />
+          <small id="error-password"></small>
+        </div>
+        <div class="caja-datos">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Enter Password again"
+          />
+          <small id="error-confirmPassword"></small>
+        </div>
+        <div class="caja-datos">
+          <label for="age">Age:</label>
+          <input type="number" id="age" placeholder="Enter age" />
+          <small id="age-error"></small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
