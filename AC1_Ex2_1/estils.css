@@ -1,30 +1,64 @@
+/* Contenedor general */
 .container-user {
+  display: flex;
   justify-content: center;
-  margin: auto auto;
+  align-items: center;
+  margin: 50px auto;
   padding: 30px;
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
+/* Formulario */
 .caja-formulario {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
   font-size: 18px;
 }
 
+/* Campos de datos */
 .caja-datos {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  gap: 10px;
+  padding: 10px 0;
+  gap: 5px;
 }
 
+/* Inputs */
+input {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #1a73e8; /* Azul moderno al hacer focus */
+}
+
+/* Botón */
 button {
-  background-color: rgb(1, 1, 250);
+  background-color: #0101fa;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 18px;
-  margin-top: 10px;
-  padding: 8px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+button:hover {
+  background-color: #1a1aff;
+  transform: scale(1.05);
 }
