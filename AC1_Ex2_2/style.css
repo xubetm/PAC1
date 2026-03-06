@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+#contenedor-principal {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Select y input */
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+select:focus,
+input[type="number"]:focus {
+  border-color: #4c7c5a;
+  box-shadow: 0 0 5px rgba(76, 124, 90, 0.5);
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #4c7c5a;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 5px;
+  min-height: 40px;
+}
+
+#resultado[data-loading="true"] {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+#resultado[data-error="true"] {
+  background-color: #d9534f;
+  color: #fff;
+}

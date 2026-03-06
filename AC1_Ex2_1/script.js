@@ -101,12 +101,6 @@ form.addEventListener("submit", function (e) {
     confirmPasswordValid &&
     ageValid
   ) {
-    console.log("Username:", user.value);
-    console.log("Password:", password.value);
-    console.log("Email:", email.value);
-    console.log("confirm-password:", confirmPassword.value);
-    console.log("Age:", age.value);
-
     user.value = "";
     email.value = "";
     password.value = "";

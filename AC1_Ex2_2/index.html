@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="contenedor-principal">
+      <label for="monedaOrigen">Seleccionar moneda:</label>
+      <select id="monedaOrigen">
+        <option value="EUR">Euro</option>
+        <option value="USD">Dollar</option>
+        <option value="GBP">Libra</option>
+      </select>
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="1" step="1" value="1" />
+      <label for="monedaDestino">Seleccionar moneda:</label>
+      <select id="monedaDestino">
+        <option value="EUR">Euro</option>
+        <option value="USD">Dollar</option>
+        <option value="GBP">Libra</option>
+      </select>
+      <div id="resultado"></div>
+      <div></div>
+    </div>
+  </body>
+</html>
