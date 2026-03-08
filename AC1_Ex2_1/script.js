@@ -59,7 +59,12 @@ function validateConfirmPassword() {
   const confirmPasswordValue = confirmPassword.value.trim();
   const errorConfirmPassword = document.getElementById("error-confirmPassword");
 
-  if (confirmPasswordValue !== passwordValue) {
+  if (confirmPasswordValue === "") {
+    errorConfirmPassword.textContent =
+      "Error: El Password no puede estar vacío";
+    confirmPassword.style.border = "2px solid red";
+    return false;
+  } else if (confirmPasswordValue !== passwordValue) {
     errorConfirmPassword.textContent = "Error: El Password no coincide";
     confirmPassword.style.border = "2px solid red";
     return false;
