@@ -1,12 +1,11 @@
 const seats = document.querySelectorAll(".row .seat:not(.occupied)");
-const movieSelected = document.getElementById("pelicula");
-const currencySelect = document.getElementById("moneda");
+const movieSelected = document.getElementById("movie");
+const currencySelect = document.getElementById("currency");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
-const movieOptions = document.querySelectorAll("#pelicula option");
+const movieOptions = document.querySelectorAll("#movie option");
 
 // Guardem el preu base i la selecció de la película
-
 movieOptions.forEach((option) => {
   option.dataset.basePrice = option.value;
   option.dataset.name = option.text;
@@ -14,7 +13,6 @@ movieOptions.forEach((option) => {
 });
 
 // API Canvi de moneda
-
 async function cambiarMoneda(base, target) {
   const response = await fetch(
     `https://api.exchangerate-api.com/v4/latest/${base}`,
@@ -24,7 +22,6 @@ async function cambiarMoneda(base, target) {
 }
 
 // Actualitzar el total
-
 function actualizarTotal() {
   const selectedSeats = document.querySelectorAll(".row .seat.selected");
 

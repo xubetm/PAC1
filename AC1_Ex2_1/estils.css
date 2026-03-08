@@ -21,6 +21,12 @@
   font-size: 18px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #0101fa;
+}
+
 /* Campos de datos */
 .caja-datos {
   display: flex;
@@ -40,7 +46,7 @@ input {
 }
 
 input:focus {
-  border-color: #1a73e8; /* Azul moderno al hacer focus */
+  border-color: #1a73e8;
 }
 
 /* Botón */
